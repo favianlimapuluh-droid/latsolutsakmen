@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Latihan Soal Akuntansi Manajemen</title>
+<style>
+:root{--bg:#f4f6fb;--cd:#fff;--tx:#182033;--mu:#5b657c;--bd:#d9dfec;--ac:#3453d4;--sel:#e6ebff;--ok:#146c43;--okb:#e1f5ea;--no:#b3261e;--nob:#fde7e5;--ex:#eef1f8;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10141f;--cd:#1a2030;--tx:#e8ecf6;--mu:#9aa5bf;--bd:#2c3550;--ac:#7f9bff;--sel:#252f55;--ok:#6fdca3;--okb:#16352a;--no:#ff9a92;--nob:#3b1d1f;--ex:#222a40;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#10141f;--cd:#1a2030;--tx:#e8ecf6;--mu:#9aa5bf;--bd:#2c3550;--ac:#7f9bff;--sel:#252f55;--ok:#6fdca3;--okb:#16352a;--no:#ff9a92;--nob:#3b1d1f;--ex:#222a40;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{display:flex;justify-content:space-between;align-items:center;gap:8px;max-width:760px;margin:0 auto;padding:14px 16px}
+main{max-width:760px;margin:0 auto;padding:0 16px 40px}
+button{font:inherit;color:inherit;cursor:pointer}
+#tg,.sec,.lk{background:var(--cd);border:1px solid var(--bd);border-radius:10px;padding:8px 14px}
+.lk{border:0;background:none;color:var(--ac);padding:4px 0}
+.pri{background:var(--ac);color:var(--bg);border:0;border-radius:10px;padding:10px 18px;font-weight:600}
+button:disabled{opacity:.4;cursor:default}
+h1{font-size:1.4rem;margin:8px 0}h2{font-size:1.15rem;margin:6px 0 12px}h3{font-size:1.05rem;margin:6px 0 10px}
+.mu{color:var(--mu);font-size:.92rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px;margin-top:14px}
+.card{background:var(--cd);border:1px solid var(--bd);border-radius:14px;padding:16px;text-align:left;display:flex;flex-direction:column;gap:4px}
+.card:hover{border-color:var(--ac)}.card b{color:var(--ac)}.card small{color:var(--mu)}
+.card2{background:var(--cd);border:1px solid var(--bd);border-radius:14px;padding:18px;margin:14px 0}
+.bar{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
+.prog{height:6px;background:var(--bd);border-radius:6px;margin:8px 0;overflow:hidden}.prog i{display:block;height:100%;background:var(--ac)}
+.opt{display:flex;gap:12px;align-items:flex-start;width:100%;text-align:left;background:var(--cd);border:1.5px solid var(--bd);border-radius:12px;padding:12px;margin:8px 0}
+.opt.sel{border-color:var(--ac);background:var(--sel)}
+.lt{flex:none;width:26px;height:26px;border-radius:50%;border:1.5px solid var(--bd);display:grid;place-items:center;font-size:.85rem;font-weight:600}
+.opt.sel .lt{background:var(--ac);color:var(--bg);border-color:var(--ac)}
+.nav{display:flex;justify-content:space-between;gap:10px;margin:12px 0;flex-wrap:wrap}
+.dots{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.dot{width:36px;height:36px;border-radius:10px;border:1.5px solid var(--bd);background:var(--cd)}
+.dot.on{background:var(--sel);border-color:var(--ac)}.dot.cur{outline:2px solid var(--ac)}
+.warn{color:var(--no);background:var(--nob);padding:10px 12px;border-radius:10px}
+.score{font-size:3rem;font-weight:700;color:var(--ac)}.score small{font-size:1.2rem;color:var(--mu)}
+.tag{display:inline-block;font-size:.8rem;font-weight:600;padding:2px 10px;border-radius:20px}
+.tag.ok{background:var(--okb);color:var(--ok)}.tag.no{background:var(--nob);color:var(--no)}.tag.na{background:var(--ex);color:var(--mu)}
+.rv{display:flex;gap:12px;align-items:flex-start;border:1.5px solid var(--bd);border-radius:10px;padding:8px 10px;margin:6px 0}
+.rv.c{background:var(--okb);border-color:var(--ok)}.rv.w{background:var(--nob);border-color:var(--no)}
+.ex{background:var(--ex);border-radius:10px;padding:10px 12px;margin-top:10px;font-size:.95rem}
+</style></head><body>
+<header><b>📒 Latihan Akuntansi Manajemen</b><button id="tg" type="button">Tema</button></header>
+<main id="app"></main>
+<script>
+const C=[
+{n:"Bab 1",t:"Manajer dan Akuntansi Manajemen",q:[
+["Manakah yang menggambarkan akuntansi manajemen, berbeda dengan akuntansi keuangan?",["Wajib mengikuti GAAP/IFRS dan diaudit auditor independen","Berorientasi masa depan dan melayani manajer internal","Berfokus pada pelaporan historis bagi investor dan bank","Terutama berupa laporan tahunan/triwulanan"],1,"Akuntansi manajemen: internal, berorientasi masa depan, tidak terikat GAAP. Tiga opsi lain adalah ciri akuntansi keuangan."],
+["Southwest Airlines dan Vanguard adalah contoh perusahaan dengan strategi…",["Diferensiasi produk","Integrasi vertikal","Keunggulan biaya (cost leadership)","Diversifikasi"],2,"Cost leadership: produk/jasa berkualitas dengan harga rendah lewat pengelolaan biaya yang efisien. Apple dan Johnson & Johnson mewakili diferensiasi."],
+["Urutan fungsi rantai nilai yang benar adalah…",["R&D → Desain → Produksi → Pemasaran → Distribusi → Layanan pelanggan","Desain → R&D → Produksi → Distribusi → Pemasaran → Layanan pelanggan","R&D → Produksi → Desain → Pemasaran → Distribusi → Layanan pelanggan","R&D → Desain → Pemasaran → Produksi → Layanan pelanggan → Distribusi"],0,"Enam fungsi: R&D, Desain, Produksi, Pemasaran, Distribusi, Layanan pelanggan; administrasi mendukung semuanya."],
+["Pada proses keputusan 5 langkah, langkah ke-3 adalah…",["Memperoleh informasi","Membuat prediksi masa depan","Membuat keputusan dengan memilih alternatif","Mengimplementasikan keputusan dan mengevaluasi kinerja"],1,"Urutan: (1) identifikasi masalah, (2) peroleh informasi, (3) prediksi, (4) putuskan (anggaran), (5) implementasi, evaluasi, belajar."],
+["Anggaran pendapatan iklan Daily News = $5.200 × 800 halaman, sedangkan aktual = $5.080 × 760 halaman. Selisih pendapatan terhadap anggaran adalah…",["$299.200 menguntungkan (F)","$208.000 merugikan (U)","$299.200 merugikan (U)","$120.000 merugikan (U)"],2,"Anggaran $4.160.000 − aktual $3.860.800 = $299.200. Aktual lebih rendah, jadi unfavorable (7,2%)."],
+["Manakah yang BUKAN salah satu dari tiga pedoman utama akuntansi manajemen?",["Pendekatan biaya-manfaat","Pertimbangan perilaku dan teknis","Biaya yang berbeda untuk tujuan yang berbeda","Seluruh laporan internal wajib sesuai GAAP"],3,"Tiga pedoman: biaya-manfaat, perilaku dan teknis, serta biaya berbeda untuk tujuan berbeda. Pengukuran internal tidak harus mengikuti GAAP."],
+["Eksekutif keuangan yang bertanggung jawab utama atas akuntansi manajemen dan keuangan, tanpa wewenang lini atas operasi pabrik, disebut…",["Controller","Treasurer","Manajer produksi","Internal auditor"],0,"Controller (Chief Accounting Officer) memengaruhi perilaku organisasi lewat pelaporan dan interpretasi data."],
+["Standar etika IMA yang mewajibkan pengungkapan seluruh informasi relevan yang diperkirakan memengaruhi pemahaman pengguna adalah…",["Kompetensi","Kerahasiaan","Integritas","Kredibilitas"],3,"Credibility: menyampaikan informasi secara adil dan objektif serta mengungkapkan semua informasi relevan."],
+["Campbell Soup membayar gaji ahli teknologi pangan yang meneliti kelayakan saus pizza Prego berkalori minimal. Fungsi rantai nilainya adalah…",["Research and Development (R&D)","Desain produk dan proses","Produksi","Pemasaran"],0,"Mencari ide dan formulasi produk baru adalah R&D."],
+["Biaya saluran telepon bebas pulsa untuk pertanyaan pelanggan tentang penggunaan sup Campbell termasuk fungsi…",["Distribusi","Pemasaran","Produksi","Layanan pelanggan"],3,"Membantu pelanggan setelah membeli adalah customer service (layanan purna jual)."]
+]},
+{n:"Bab 2",t:"Pengenalan Istilah dan Tujuan Biaya",q:[
+["Objek biaya (cost object) adalah…",["Biaya yang sudah dibayar tunai","Segala sesuatu yang kepadanya biaya diukur dan diakumulasikan","Biaya yang hanya terjadi di departemen produksi","Biaya yang tidak dapat ditelusuri"],1,"Contoh objek biaya: produk, jasa, proyek, pelanggan, aktivitas, departemen."],
+["Gaji supervisor departemen perakitan BMW adalah biaya… jika objek biayanya satu unit BMW X5.",["Langsung","Variabel","Tidak langsung","Sunk"],2,"Klasifikasi bergantung pada objek biaya: langsung bagi Departemen Perakitan, tetapi tidak langsung (dialokasikan) bagi satu unit X5."],
+["Sewa pabrik $54.000 per tahun bersifat tetap. Biaya sewa per unit pada produksi 1.000.000 unit adalah…",["$0,060","$0,054","$0,540","$54,00"],1,"$54.000 / 1.000.000 = $0,054 (turun dari $0,060 pada 900.000 unit)."],
+["Biaya tetap $10.000.000 dan biaya variabel $60/unit; pada 500.000 unit biaya per unit = $80. Jika manajer salah memakai $80 untuk 200.000 unit, estimasi total biaya diremehkan sebesar…",["$2.000.000","$4.000.000","$6.000.000","$10.000.000"],2,"Biaya aktual 200.000 unit = $10.000.000 + $12.000.000 = $22.000.000; estimasi salah = $16.000.000; selisih $6.000.000."],
+["Manakah yang termasuk biaya periode (period costs)?",["Bahan baku langsung","Tenaga kerja manufaktur langsung","Biaya pemasaran dan distribusi","Overhead pabrik"],2,"Biaya periode (R&D, desain, pemasaran, distribusi, layanan pelanggan) langsung menjadi beban. Biaya manufaktur adalah biaya persediaan."],
+["Foxwood: tenaga kerja langsung $300.000 dan overhead pabrik $214.000. Biaya konversi (conversion cost) adalah…",["$214.000","$514.000","$750.000","$964.000"],1,"Conversion cost = TKL + overhead = $300.000 + $214.000 = $514.000."],
+["Upah waktu menganggur (idle time) akibat kerusakan mesin diperlakukan sebagai…",["Bahan baku langsung","Tenaga kerja langsung","Biaya pemasaran","Biaya overhead pabrik"],3,"Idle time selalu diperlakukan sebagai overhead pabrik (biaya tidak langsung)."],
+["Persediaan awal bahan baku $40.000, pembelian $460.000, persediaan akhir $50.000. Bahan baku langsung yang digunakan adalah…",["$450.000","$460.000","$500.000","$550.000"],0,"$40.000 + $460.000 − $50.000 = $450.000."],
+["Total biaya manufaktur $964.000, WIP awal $10.000, WIP akhir $14.000. Harga pokok produksi (COGM) adalah…",["$974.000","$964.000","$960.000","$950.000"],2,"COGM = $964.000 + $10.000 − $14.000 = $960.000."],
+["COGM $960.000; barang jadi awal $100.000 dan akhir $150.000; penjualan $1.360.000; biaya operasi $330.000. Laba operasi adalah…",["$120.000","$330.000","$450.000","$210.000"],0,"COGS = 100.000 + 960.000 − 150.000 = $910.000; laba kotor $450.000; laba operasi = $450.000 − $330.000 = $120.000."]
+]},
+{n:"Bab 3",t:"Analisis Biaya-Volume-Laba (CVP)",q:[
+["Harga jual £120, biaya variabel £72/unit, biaya tetap £24.000 per bulan. BEP dalam unit adalah…",["200 unit","333 unit","500 unit","1.000 unit"],2,"CM = £120 − £72 = £48; BEP = £24.000 / £48 = 500 unit."],
+["Penjualan dianggarkan 2.200 unit dan BEP 500 unit. Margin of safety (%) adalah…",["77,27%","22,73%","50,00%","81,60%"],0,"MoS = (2.200 − 500) / 2.200 = 1.700 / 2.200 = 77,27%."],
+["Dengan MoS 1.700 unit dan CM £48 per unit, laba dianggarkan adalah…",["£24.000","£81.600","£105.600","£120.000"],1,"Laba = MoS (unit) × CM = 1.700 × £48 = £81.600. Cek: CM total £105.600 − biaya tetap £24.000 = £81.600."],
+["Biaya tetap £24.000 dan CM £48/unit. Penjualan yang dibutuhkan agar laba £96.000 adalah…",["2.000 unit","2.200 unit","3.000 unit","2.500 unit"],3,"(£24.000 + £96.000) / £48 = 2.500 unit."],
+["Total CM £105.600 dan laba operasi £81.600. Degree of operating leverage (DOL) ≈ …",["0,77","1,29","2,20","4,40"],1,"DOL = total CM / laba operasi = 105.600 / 81.600 ≈ 1,29. Penjualan naik 10% → laba naik sekitar 12,9%."],
+["Anggaran: 9.000 unit @ £32, CM £13/unit, biaya tetap £78.000. Jika harga turun ke £28 dan volume naik ke 10.800 unit, laba operasi adalah…",["£19.200","£39.000","£97.200","£15.400"],0,"CM baru = £13 − £4 = £9; total CM = 10.800 × 9 = £97.200; laba = £97.200 − £78.000 = £19.200 (lebih rendah dari £39.000, jadi proposal ditolak)."],
+["LMN Ltd (Material B terbatas): CM per kg Material B untuk L = £3,00; M = £4,00; N = £2,50. Produk yang diprioritaskan pertama adalah…",["Produk L","Produk M","Produk N","Ketiganya sama"],1,"Peringkat berdasarkan CM per unit faktor pembatas: M £4,00 > L £3,00 > N £2,50, bukan CM per unit produk."],
+["Rencana optimal LMN: 160 unit M (CM £12), 120 unit L (CM £15), dan 20 unit N (CM £17,50). Total CM adalah…",["£4.070","£4.100","£4.370","£3.720"],0,"£1.920 + £1.800 + £350 = £4.070."],
+["Produk A: bauran 60%, CM £10. Produk B: bauran 40%, CM £20. Biaya tetap £14.000. BEP produk A adalah…",["400 unit","600 unit","1.000 unit","1.400 unit"],1,"CM komposit = 6 + 8 = £14; BEP komposit = 14.000 / 14 = 1.000 unit; BEP A = 1.000 × 60% = 600 unit."],
+["Situasi (a): biaya tetap £30.000, CM £1,50/unit. Situasi (b): biaya tetap £45.000, CM £2,00/unit. Pada volume berapa laba keduanya sama?",["20.000 unit","22.500 unit","30.000 unit","70.000 unit"],2,"1,5Q − 30.000 = 2Q − 45.000 → 0,5Q = 15.000 → Q = 30.000. Di atas 30.000 unit, situasi (b) lebih menguntungkan."]
+]},
+{n:"Bab 11",t:"Pengambilan Keputusan dan Informasi Relevan",q:[
+["Dua syarat agar suatu biaya/pendapatan relevan adalah…",["Terjadi di masa lalu dan sama di semua alternatif","Terjadi di masa depan dan berbeda antar alternatif","Terjadi di masa depan dan sama di semua alternatif","Terjadi di masa lalu dan berbeda antar alternatif"],1,"Informasi relevan harus terjadi di masa depan dan berbeda di antara alternatif."],
+["Dalam keputusan penggantian mesin, nilai buku mesin lama $400.000 adalah…",["Relevan karena menjadi dasar depresiasi","Relevan karena akan dihapuskan","Tidak relevan karena merupakan sunk cost","Relevan hanya jika mesin dijual"],2,"Nilai buku adalah biaya masa lalu. Baik mesin dipertahankan maupun dijual, nilainya tetap dihapuskan."],
+["Surf Gear punya kapasitas menganggur. Pesanan khusus 5.000 handuk @ $11,00; biaya variabel manufaktur $7,50/unit; tanpa biaya pemasaran. Tambahan laba operasi jika diterima adalah…",["Rugi $5.000","$55.000","$37.500","$17.500"],3,"($11,00 − $7,50) × 5.000 = $17.500. Biaya tetap $4,50 dan $2,00 per unit tidak relevan."],
+["Soho: biaya relevan Make $60/unit ($36 + $10 + $6 + $8), harga beli luar $64/unit, kebutuhan 250.000 unit. Keputusan terbaik dan penghematannya…",["Make, hemat $1.000.000","Buy, hemat $1.000.000","Make, hemat $4.000.000","Buy, hemat $3.000.000"],0,"Make $15.000.000 vs Buy $16.000.000, jadi Make hemat $1.000.000. Overhead tetap $3.000.000 tidak relevan."],
+["Jika Soho membeli DVD player, fasilitas bisa dipakai membuat Digiteks (laba incremental $2.500.000). Make $15.000.000 vs Buy $16.000.000. Alternatif terbaik adalah…",["Make, lebih baik $1.000.000","Buy, lebih baik $1.500.000","Buy, lebih baik $2.500.000","Make, lebih baik $1.500.000"],1,"Buy: $16.000.000 − $2.500.000 = $13.500.000 vs Make $15.000.000, jadi Buy lebih baik $1.500.000."],
+["Kapasitas perakitan 600 jam mesin/hari. Snowmobile: CM $240 (2 jam). Boat: CM $375 (5 jam). Dengan hanya kendala ini, total CM maksimum adalah…",["$45.000","$36.000","$225.000","$72.000"],3,"CM per jam mesin: Snowmobile $120 vs Boat $75. Produksi 300 Snowmobile → 600 × $120 = $72.000."],
+["Kendala: 2S+5B ≤ 600, S+0,5B ≤ 120, B ≤ 110. Solusi optimal S = 75 dan B = 90 (CM S = $240, B = $375) menghasilkan total CM…",["$41.250","$28.800","$51.750","$47.250"],2,"240 × 75 + 375 × 90 = 18.000 + 33.750 = $51.750; titik sudut lain lebih rendah."],
+["Wisk menunjukkan rugi akuntansi $32.000. Pendapatannya $400.000 dan biaya yang benar-benar terhindarkan $385.000. Jika Wisk dihentikan, laba operasi perusahaan akan…",["Naik $32.000","Turun $15.000","Naik $15.000","Tidak berubah"],1,"Pendapatan hilang $400.000 − penghematan $385.000 = laba turun $15.000. Overhead teralokasi tetap ada."],
+["Toledo: jika mengganti mesin, pendapatan $1.100.000, kas operasi $460.000, depresiasi mesin baru $300.000, rugi pelepasan $360.000. Laba operasi tahun pertama adalah…",["−$20.000","+$100.000","+$120.000","−$360.000"],0,"1.100.000 − 460.000 − 300.000 − 360.000 = −$20.000. Padahal total 2 tahun untung $120.000; inilah konflik dengan evaluasi kinerja akrual."],
+["Goldcoast: kas operasi komputer 3 tahun: workstations lama $120.000, PC baru $30.000; nilai jual lama $95.000; harga PC baru $135.000. Penghematan bersih mengganti selama 3 tahun adalah…",["$90.000","$95.000","$50.000","$135.000"],2,"Biaya relevan: lama $120.000; baru $30.000 + $135.000 − $95.000 = $70.000. Selisih = $50.000."]
+]},
+{n:"Bab 12",t:"Keputusan Penetapan Harga dan Manajemen Biaya",q:[
+["Tiga faktor utama yang memengaruhi keputusan penetapan harga adalah…",["Pelanggan, pesaing, dan biaya","Pemasok, pemerintah, dan pajak","Pelanggan, pemasok, dan investor","Pesaing, pajak, dan teknologi"],0,"Pelanggan dan pesaing memengaruhi permintaan; biaya memengaruhi penawaran."],
+["Datatech memesan 5.000 komputer. Biaya relevan: bahan baku $2.300.000, TKL $320.000, tambahan kapasitas tetap $250.000. Biaya relevan per unit adalah…",["$460","$524","$574","$590"],2,"Total relevan $2.870.000 / 5.000 = $574 per unit."],
+["Jika Astel menawarkan $595/unit untuk pesanan itu (biaya relevan $574/unit), tambahan laba operasi adalah…",["$21.000","$105.000","$2.975.000","$2.870.000"],1,"($595 − $574) × 5.000 = $105.000."],
+["Target price Provalue II $800/unit dengan target laba operasi 10% dari pendapatan. Target cost per unit adalah…",["$640","$720","$780","$800"],1,"Target laba per unit = 10% × $800 = $80; target cost = $800 − $80 = $720."],
+["Biaya penuh model lama $900/unit, target cost $720/unit, volume 200.000 unit. Total efisiensi biaya lewat value engineering yang dibutuhkan adalah…",["$18.000.000","$144.000.000","$180.000.000","$36.000.000"],3,"($900 − $720) × 200.000 = $36.000.000."],
+["Pada tahap R&D dan desain produk, berapa kira-kira biaya total yang sudah terkunci (locked-in) dibanding yang baru terjadi?",["Terkunci lebih dari 80%; terjadi sekitar 8–10%","Terkunci sekitar 8–10%; terjadi lebih dari 80%","Terkunci dan terjadi sama-sama sekitar 50%","Terkunci 0%; terjadi 100%"],0,"Keputusan desain mengunci sebagian besar biaya, sehingga value engineering paling efektif dilakukan di awal."],
+["Modal terinvestasi $96.000.000, target ROI pra-pajak 18%, volume 200.000 unit, full cost $720/unit. Harga jual prospektif (cost-plus) adalah…",["$786,40","$816,00","$806,40","$820,00"],2,"Target laba = $17.280.000; per unit = $86,40 (markup 12% dari $720); harga = $720 + $86,40 = $806,40."],
+["Menetapkan harga di bawah biaya (umumnya di bawah average variable cost) untuk menghancurkan pesaing, lalu menaikkan harga kembali, disebut…",["Predatory pricing","Peak-load pricing","Price discrimination","Collusive pricing"],0,"Predatory pricing melanggar hukum antitrust. Dumping adalah menjual di luar negeri di bawah nilai pasar negara asal."],
+["Provalue III: bahan baku 200.000 kit × $375; TKL $10.600.000; mesin tetap $11.400.000; pemesanan 20.000 × $60; pengujian 2.800.000 jam × $1,70; rework 32.500 jam × $32. Total biaya manufaktur adalah…",["$97.000.000","$104.000.000","$108.000.000","$110.000.000"],1,"Biaya langsung $97.000.000 + overhead $7.000.000 = $104.000.000 ($520/unit), hemat $4.000.000 dari Provalue II ($108.000.000)."],
+["Biaya pengujian dan inspeksi turun dari 3.000.000 jam × $2,00 menjadi 2.800.000 jam × $1,70. Penghematannya adalah…",["$260.000","$500.000","$1.240.000","$2.000.000"],2,"$6.000.000 − $4.760.000 = $1.240.000."]
+]},
+{n:"Bab 14",t:"Alokasi Biaya, Profitabilitas Pelanggan, dan Varians Penjualan",q:[
+["Kriteria alokasi biaya yang paling unggul (fondasi Activity-Based Costing) adalah…",["Ability to bear","Fairness/equity","Benefits received","Cause and effect"],3,"Sebab-akibat mengidentifikasi variabel yang menyebabkan sumber daya dikonsumsi."],
+["Biaya Treasury $900.000 dialokasikan berdasarkan biaya peralatan perakitan baru: Refrigerator $5,2 juta, Clothes Dryer $3,8 juta. Alokasi ke Refrigerator Division adalah…",["$380.000","$450.000","$520.000","$900.000"],2,"$900.000 × 5,2/9,0 = $520.000."],
+["Alokasi ke Refrigerator Division: Treasury $520.000, CHRM $880.000, Corporate Administration $3.000.000. Total alokasi adalah…",["$3.500.000","$4.400.000","$5.400.000","$7.900.000"],1,"$520.000 + $880.000 + $3.000.000 = $4.400.000. Dryer menerima $3.500.000; total $7.900.000."],
+["Biaya kunjungan sales ke lokasi pelanggan termasuk tingkat hierarki biaya pelanggan…",["Output unit-level","Batch-level","Customer-sustaining","Corporate-sustaining"],2,"Customer-sustaining: aktivitas yang mendukung pelanggan individu tanpa bergantung jumlah unit atau batch."],
+["Pelanggan A Spring Distribution: laba kotor $60.480 dan total biaya tingkat pelanggan $25.080. Laba operasi pelanggan A adalah…",["$25.080","$35.100","$35.400","$60.480"],2,"$60.480 − $25.080 = $35.400."],
+["Dari empat pelanggan Spring (A, B, G, J), yang mengalami rugi operasi adalah…",["Pelanggan G","Pelanggan A","Pelanggan B","Pelanggan J"],0,"G: laba kotor $3.480 − biaya pelanggan $4.670 = −$1.190, akibat diskon besar, pesanan sering, dan pengiriman kilat."],
+["Menurut whale curve, kelompok 20% pelanggan paling menguntungkan sering menghasilkan sekitar…",["20% dari total laba operasi","50% dari total laba operasi","100% persis dari total laba operasi","150%–300% dari total laba operasi"],3,"Pelanggan di tengah mendekati impas, sedangkan pelanggan terbawah mengikis laba."],
+["Payne: aktual 84.000 roll (Commercial 30%, Residential 70%) vs anggaran 25%/75%; CM anggaran Commercial $500 dan Residential $400. Total sales-mix variance adalah…",["$420.000 U","$420.000 F","$1.700.000 F","$2.100.000 F"],1,"Commercial: 84.000 × 0,05 × 500 = $2.100.000 F; Residential: 84.000 × (−0,05) × 400 = $1.680.000 U; total $420.000 F."],
+["Payne: industri aktual 700.000 roll; pangsa pasar aktual 12% vs anggaran 10%; CM komposit anggaran $425. Market-share variance adalah…",["$4.250.000 U","$1.700.000 F","$5.950.000 U","$5.950.000 F"],3,"700.000 × (0,12 − 0,10) × $425 = $5.950.000 F."],
+["Delpino: input aktual 6.500 ton tomat vs standar diizinkan 6.400 ton; biaya rata-rata standar $77/ton. Direct materials yield variance adalah…",["$3.250 F","$4.450 U","$7.700 U","$10.400 U"],2,"100 ton × $77 = $7.700 U. Mix $3.250 F + yield $7.700 U = efficiency variance $4.450 U."]
+]},
+{n:"Bab 21",t:"Penganggaran Modal dan Analisis Biaya",q:[
+["Post-investment audit (membandingkan arus kas aktual dengan estimasi) dilakukan pada tahap…",["Mengidentifikasi proyek","Memperoleh informasi","Membuat prediksi","Implementasi, evaluasi kinerja, dan belajar"],3,"Tahap 5 mencakup pendanaan, eksekusi, audit pasca-investasi, dan pembelajaran."],
+["Pasangan metode penganggaran modal yang tidak memperhitungkan nilai waktu uang adalah…",["Payback dan AARR","NPV dan IRR","IRR dan payback","NPV dan AARR"],0,"NPV dan IRR adalah metode DCF; payback dan AARR adalah non-DCF."],
+["Top-Spin: investasi $392.500, arus kas tahunan $130.000 selama 5 tahun (faktor annuity 3,019). Tabel baris 5 periode: 18% = 3,127; 20% = 2,991. IRR hasil interpolasi ≈ …",["18,0%","19,6%","20,0%","8,0%"],1,"18% + (3,127 − 3,019)/(3,127 − 2,991) × 2% = 18% + 1,59% ≈ 19,6%, jauh di atas RRR 8%."],
+["Manakah keunggulan NPV dibanding IRR?",["NPV dinyatakan dalam persentase","NPV mengasumsikan reinvestasi pada IRR proyek","NPV bersifat aditif antar proyek dan menghasilkan satu nilai pasti","NPV mengabaikan nilai waktu uang"],2,"NPV diukur dalam satuan uang sehingga bisa dijumlahkan, tidak punya masalah IRR ganda, dan reinvestasinya pada RRR."],
+["PV arus kas masuk $519.090 (= $130.000 × 3,993) dan net initial investment $392.500. NPV adalah…",["$519.090","$46.610","−$126.590","$126.590"],3,"NPV = $519.090 − $392.500 = $126.590 (positif, proyek layak)."],
+["Payback period Top-Spin Part A ($392.500 dibagi arus kas $130.000 per tahun) adalah…",["3,0 tahun","2,0 tahun","1,5 tahun","5,0 tahun"],0,"$392.500 / $130.000 ≈ 3,0 tahun. Payback mengabaikan nilai waktu uang dan arus kas setelah payback."],
+["Rata-rata kas operasi tahunan $128.200, depresiasi tambahan $70.000, investasi awal $392.500. AARR adalah…",["32,7%","14,8%","19,6%","18,0%"],1,"Rata-rata laba operasi = $128.200 − $70.000 = $58.200; AARR = $58.200 / $392.500 = 14,8%."],
+["Tarif pajak 40%. Mesin baru $390.000, modal kerja $9.000, mesin lama dijual $6.500 dengan nilai buku $40.000. Net initial investment setelah pajak adalah…",["$379.100","$392.500","$399.000","$412.400"],0,"Rugi pelepasan $33.500 × 40% = hemat pajak $13.400; kas masuk $6.500 + $13.400 = $19.900; $399.000 − $19.900 = $379.100."],
+["Kas operasi sebelum pajak $130.000, depresiasi tambahan $70.000, tarif pajak 40%. Arus kas operasi bersih setelah pajak per tahun adalah…",["$78.000","$90.000","$106.000","$130.000"],2,"$130.000 × 0,60 + 0,40 × $70.000 = $78.000 + $28.000 = $106.000."],
+["Tingkat diskonto riil 5% dan inflasi 3%. Tingkat diskonto nominal adalah…",["8,00%","8,15%","2,00%","15,00%"],1,"(1,05 × 1,03) − 1 = 8,15%. Arus kas nominal didiskonto dengan tingkat nominal; arus kas riil dengan tingkat riil."]
+]}
+];
+</script>
+<script>
+const $=s=>document.querySelector(s),app=$("#app");
+const esc=s=>String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+let ci=-1,qi=0,ans=[],done=false,warn=false;
+function isDark(){const t=document.documentElement.dataset.theme;return t?t==="dark":matchMedia("(prefers-color-scheme: dark)").matches}
+function paintTheme(){$("#tg").textContent=isDark()?"☀️ Mode Terang":"🌙 Mode Gelap"}
+function setTheme(t){document.documentElement.dataset.theme=t;try{localStorage.setItem("th",t)}catch(e){}paintTheme()}
+try{const s=localStorage.getItem("th");if(s==="dark"||s==="light")document.documentElement.dataset.theme=s}catch(e){}
+$("#tg").onclick=()=>setTheme(isDark()?"light":"dark");
+function home(){ci=-1;render(true)}
+function start(i){ci=i;qi=0;ans=Array(10).fill(-1);done=false;warn=false;render(true)}
+function pick(k){ans[qi]=k;warn=false;render(false)}
+function go(i){if(i<0||i>9)return;qi=i;warn=false;render(true)}
+function fin(){const miss=ans.filter(a=>a<0).length;if(miss>0&&!warn){warn=true;render(false);return}done=true;render(true)}
+function render(top){
+let h="";
+if(ci<0){
+h=`<h1>Pilih Bab</h1><p class="mu">10 soal pilihan ganda per bab. Jawaban benar dan pembahasan baru ditampilkan setelah kamu menyelesaikan satu set soal.</p><div class="grid">`+
+C.map((c,i)=>`<button type="button" class="card" onclick="start(${i})"><b>${c.n}</b><span>${esc(c.t)}</span><small>10 soal</small></button>`).join("")+`</div>`;
+}else if(!done){
+const c=C[ci],q=c.q[qi],n=ans.filter(a=>a>=0).length;
+h=`<div class="bar"><button type="button" class="lk" onclick="home()">← Daftar bab</button><span class="mu">${c.n} · terjawab ${n}/10</span></div>
+<div class="prog"><i style="width:${(qi+1)*10}%"></i></div>
+<div class="card2"><div class="mu">Soal ${qi+1} dari 10</div><h2>${esc(q[0])}</h2>`+
+q[1].map((o,k)=>`<button type="button" class="opt${ans[qi]===k?" sel":""}" aria-pressed="${ans[qi]===k}" onclick="pick(${k})"><span class="lt">${"ABCD"[k]}</span><span>${esc(o)}</span></button>`).join("")+`</div>
+<div class="nav"><button type="button" class="sec" onclick="go(${qi-1})"${qi===0?" disabled":""}>← Sebelumnya</button>`+
+(qi<9?`<button type="button" class="pri" onclick="go(${qi+1})">Berikutnya →</button>`:`<button type="button" class="pri" onclick="fin()">Selesai dan lihat hasil</button>`)+`</div>
+<div class="dots">`+ans.map((a,k)=>`<button type="button" class="dot${a>=0?" on":""}${k===qi?" cur":""}" aria-label="Soal ${k+1}" onclick="go(${k})">${k+1}</button>`).join("")+`</div>`+
+(warn?`<p class="warn">Masih ada ${10-n} soal belum dijawab. Tekan tombol selesai sekali lagi jika tetap ingin mengakhiri.</p>`:"")+
+(qi<9?`<div class="nav"><button type="button" class="sec" onclick="fin()">Selesai sekarang</button></div>`:"");
+}else{
+const c=C[ci],sc=ans.filter((a,k)=>a===c.q[k][2]).length;
+const msg=sc>=8?"Sangat baik!":sc>=6?"Cukup baik, pelajari pembahasan soal yang salah.":"Perlu belajar lagi, baca pembahasan di bawah.";
+h=`<div class="card2" style="text-align:center"><div class="mu">${c.n} · ${esc(c.t)}</div><div class="score">${sc}<small>/10</small></div><p>${sc*10}% benar. ${msg}</p><div class="nav" style="justify-content:center"><button type="button" class="sec" onclick="home()">Daftar bab</button><button type="button" class="pri" onclick="start(${ci})">Ulangi bab</button></div></div>
+<h2>Review jawaban dan pembahasan</h2>`+
+c.q.map((q,k)=>{const u=ans[k],ok=u===q[2];
+return `<div class="card2"><span class="tag ${u<0?"na":ok?"ok":"no"}">Soal ${k+1} · ${u<0?"Tidak dijawab":ok?"Benar":"Salah"}</span><h3>${esc(q[0])}</h3>`+
+q[1].map((o,j)=>`<div class="rv${j===q[2]?" c":""}${(j===u&&!ok)?" w":""}"><span class="lt">${"ABCD"[j]}</span><span>${esc(o)}${j===q[2]?" <b>✓ Jawaban benar</b>":""}${(j===u&&!ok)?" <b>✗ Jawabanmu</b>":""}${(j===u&&ok)?" (pilihanmu)":""}</span></div>`).join("")+
+`<div class="ex"><b>Pembahasan:</b> ${esc(q[3])}</div></div>`}).join("")+
+`<div class="nav"><button type="button" class="sec" onclick="home()">Daftar bab</button><button type="button" class="pri" onclick="start(${ci})">Ulangi bab</button></div>`;
+}
+app.innerHTML=h;paintTheme();
+if(top)window.scrollTo(0,0);
+}
+render(true);
+</script>
+</body></html>
